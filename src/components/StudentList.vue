@@ -63,7 +63,10 @@ defineEmits<{
 
 .name {
   font-weight: 600;
-  word-break: break-all;
+  word-break: break-word; /* Rompe la palabra si es muy larga */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .actions {
